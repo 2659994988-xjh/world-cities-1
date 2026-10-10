@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-# plt.style.use('seaborn-v0_8')
+plt.style.use('seaborn-v0_8')
 
 st.title('World Cities')
 df = pd.read_csv('worldcities.csv')
