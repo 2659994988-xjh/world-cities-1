@@ -11,9 +11,5 @@ st.title("🌍 World Cities")
 st.write("Welcome to the World Cities Streamlit app!")
 st.write("Explore city information and discover cities around the world.")
 
-st.page_link(
-    "pages/app.py",
-    label="Go to the app",
-    icon="🚀",
-    type="primary",
-)
+if st.button("Go to Cities Explorer", use_container_width=True, key="nav_button"):
+    st.switch_page("pages/app.py")
